@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decimal Division</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="container">
+  <h1>Decimal Division Anatomy</h1>
+  <form id="divisionForm">
+    <label for="dividend">Dividend:</label><br>
+    <input type="number" step="any" id="dividend" value="0" required><br>
+
+    <label for="divisor">Divisor:</label><br>
+    <input type="number" step="any" id="divisor" value="1" required><br>
+
+    <button type="submit">Calculate</button>
+  </form>
+  <p id="scaleNote" style="display:none; color: orange; font-weight: bold; margin-top: 10px;"></p>
+</div>
+<div id="structure-container">
+  <h2>Division Steps</h2>
+  <div id="calculation-container">
+    <div id="dividend-grid" class="operands-container">
+      <div></div>
+      <div id="dividend-container"></div>
+    </div>
+    <div id="divisor-grid" class="operands-container">
+      <div id="divisor-container" class="operands-container"></div>
+    </div>
+    <div id="remainder-grid" class="operands-container">
+      <div></div>
+      <div id="remainder-container"></div>
+    </div>
+    <div id="quotient-container" class="operands-container"></div>
+  </div>
+  <div id="result-type"></div>
+</div>
+<button class="btn-export" onclick="exportImage()">📷 Export as Image</button>
+
+<!-- Script html2canvas (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    background-color: #15142b;
+    background-image: linear-gradient(180deg, #372991, #15142b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container, #structure-container {
+    background-color: white;
+    width: 97%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 3%;
+    overflow: auto; /* evita vazamento */
+    height: auto; 
+}
+
+form {
+    background-color: #E6E1EF;
+    padding: 15px;
+    width: 97%;
+    border-radius: 3%;
+}
+
+#dividendLabel, #divisorLabel {
+    background-color: #D1C9E0;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#dividend, #divisor {
+    margin-top: 9px;
+    width: 98%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #60cc64;
+    color: white;
+    border: none;
+    padding: 7px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    color: purple;
+}
+
+#calculation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 140px auto; /* primeira linha sempre com 100px */
+}
+
+.operands-container {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 30px;
+}
+#dividend-grid {
+    display: grid;
+    grid-template-columns: 33.3% 66.6%;
+    align-items: start;
+    column-gap: 0px;
+}
+
+#divisor-grid{
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#result-type {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    margin-top: 15px;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#remainder-grid {
+    font-size: 30px;
+    margin-top: -80px;
+    display: grid;
+    grid-template-columns: 33.3% 66.6%;
+    align-items: start;
+    column-gap: 0px;
+}
+.btn-export {
+    margin: 20px auto;
+    display: block;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-export:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
